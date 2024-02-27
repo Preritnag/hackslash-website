@@ -41,10 +41,15 @@ h1:hover {
 }
 .page{
     display: flex;
+    flex-wrap: wrap;
 }
 .info{
     width: 520.31px;
     height: 320px;
+}
+.info,.head,.head2{
+    width:100%;
+    
 }
 .head{
     width: 424.31px;
@@ -82,4 +87,19 @@ p{
             margin-top: 4rem;
             padding: 1rem 2rem;
             transition: .2s
+}
+/* MOBILE DEVICES */
+@media only screen and (min-width:601px) and (max-width:768px){
+    .main{
+        width:80%;
+    }
+}
+/* large screen */
+@media only screen and (min-width:769px){
+    .info,.head,.head2{
+        width: 40%;
+    }
+    .head,.head2{
+        width:80%;
+    }
 }
